@@ -1,0 +1,92 @@
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU type:	Intel Coffeelake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+matriz 1
+
+tam : 257
+iteracoes: 10
+
+iter 1: 22.6715680975093
+iter 2: 22.6715680975093
+iter 3: 1.83175334896599e-12
+iter 4: 3.09965978913707e-13
+iter 5: 3.06790616803033e-13
+iter 6: 3.06873203123891e-13
+iter 7: 3.08094938035495e-13
+iter 8: 3.07029626495979e-13
+iter 9: 3.08660637147732e-13
+iter 10: 3.09024179863299e-13
+
+LU_tempo: 20.4912950992584
+iter_tempo: 1121.30537605286
+residuo_tempo: 719.700793981552
+
+--------------------------------------------------------------------------------
+Region teste_fatoracaoLU_257, Group 1: L3
++-------------------+----------+
+|    Region Info    |  Core 1  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.069187 |
+|     call count    |        1 |
++-------------------+----------+
+
++-----------------------+---------+-----------+
+|         Event         | Counter |   Core 1  |
++-----------------------+---------+-----------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 601864100 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 176962700 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 232839800 |
+|    L2_LINES_IN_ALL    |   PMC0  |   4067340 |
+|     L2_TRANS_L2_WB    |   PMC1  |    174795 |
++-----------------------+---------+-----------+
+
++-------------------------------+-----------+
+|             Metric            |   Core 1  |
++-------------------------------+-----------+
+|      Runtime (RDTSC) [s]      |    0.0692 |
+|      Runtime unhalted [s]     |    0.0519 |
+|          Clock [MHz]          | 2590.1157 |
+|              CPI              |    0.2940 |
+|  L3 load bandwidth [MBytes/s] | 3762.4107 |
+|  L3 load data volume [GBytes] |    0.2603 |
+| L3 evict bandwidth [MBytes/s] |  161.6906 |
+| L3 evict data volume [GBytes] |    0.0112 |
+|    L3 bandwidth [MBytes/s]    | 3924.1013 |
+|    L3 data volume [GBytes]    |    0.2715 |
++-------------------------------+-----------+
+
+Region teste_residuo_257, Group 1: L3
++-------------------+----------+
+|    Region Info    |  Core 1  |
++-------------------+----------+
+| RDTSC Runtime [s] | 0.718715 |
+|     call count    |       11 |
++-------------------+----------+
+
++-----------------------+---------+------------+
+|         Event         | Counter |   Core 1   |
++-----------------------+---------+------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  | 9237635000 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 2708409000 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 2436240000 |
+|    L2_LINES_IN_ALL    |   PMC0  |   26084690 |
+|     L2_TRANS_L2_WB    |   PMC1  |     621412 |
++-----------------------+---------+------------+
+
++-------------------------------+-----------+
+|             Metric            |   Core 1  |
++-------------------------------+-----------+
+|      Runtime (RDTSC) [s]      |    0.7187 |
+|      Runtime unhalted [s]     |    0.7947 |
+|          Clock [MHz]          | 3788.6878 |
+|              CPI              |    0.2932 |
+|  L3 load bandwidth [MBytes/s] | 2322.7850 |
+|  L3 load data volume [GBytes] |    1.6694 |
+| L3 evict bandwidth [MBytes/s] |   55.3354 |
+| L3 evict data volume [GBytes] |    0.0398 |
+|    L3 bandwidth [MBytes/s]    | 2378.1203 |
+|    L3 data volume [GBytes]    |    1.7092 |
++-------------------------------+-----------+
+
